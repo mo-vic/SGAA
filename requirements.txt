@@ -1,0 +1,7 @@
+# SGAA runtime dependencies.
+# torch/torchvision are preinstalled in the target environment
+# (PyTorch 2.12.1+cu130); these are the minimum versions the code targets.
+numpy>=1.24
+torch>=2.0
+torchvision>=0.15
+matplotlib>=3.7

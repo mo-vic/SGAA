@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgaa"
+version = "0.1.0"
+description = "Sigmoid-G Alternating Activation: a parameter-free activation scheme pairing the logistic sigmoid with the antiderivative of its reciprocal derivative."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "SGAA Research Project" }]
+keywords = ["deep learning", "activation functions", "gradient vanishing", "sigmoid"]
+dependencies = [
+    "numpy>=1.24",
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+sgaa = "sgaa.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
