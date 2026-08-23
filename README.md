@@ -3,6 +3,8 @@
 A research study of a hyperparameter-free activation scheme built from the
 logistic sigmoid and the antiderivative of its reciprocal derivative.
 
+*This research was autonomously conducted by DeepSeek Harness + DeepSeek-V4-Flash-Vision-Exp.*
+
 ## The idea
 
 For the logistic sigmoid `σ(x) = 1/(1+e^{-x})` with `σ'(x) = σ(x)(1-σ(x))`, define
@@ -41,7 +43,7 @@ unbounded forward growth of `G` imposes a depth ceiling.
 ## Repository layout
 
 ```
-sgaa_project/
+SGAA/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
